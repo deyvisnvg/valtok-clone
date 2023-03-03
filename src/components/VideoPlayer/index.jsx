@@ -1,27 +1,26 @@
-import { useEffect, useRef } from "react";
-import ReactPlayer from "react-player";
+import ReactPlayer from "react-player"
+import VideoPlayerActions from "./VideoPlayerActions"
 import "./VideoPlayer.css"
 
-const SRC = 'https://youtu.be/T4Rc_SPbxZQ?t=1'
-
-export default function VideoPlayer() {
-
+export default function VideoPlayer({ src }) {
     return (
         <div className='player-wrapper'>
             <ReactPlayer
                 className='react-player'
-                url={SRC}
+                url={src}
                 width='100%'
                 height='100%'
                 config={{
                     youtube: {
-                        playerVars: { controls: 0 }
+                        playerVars: { controls: 1 }
                     }
                 }}
                 light
                 playing
+                loop
+                volume={0.5}
             />
+            <VideoPlayerActions />
         </div>
-
     )
 }

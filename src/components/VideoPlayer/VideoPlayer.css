@@ -10,6 +10,12 @@
     left: 0;
 }
 
-.hola {
-    background-color: aliceblue;
+.actions {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+}
+
+.action {
+    color: #fff;
 }

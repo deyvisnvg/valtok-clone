@@ -19,4 +19,5 @@ main {
   width: 360px;
   height: auto;
   display: block;
+  scroll-snap-type: y mandatory;
 }

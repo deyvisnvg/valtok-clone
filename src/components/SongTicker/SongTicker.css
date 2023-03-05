@@ -1,0 +1,16 @@
+.musicIcon {
+    transform: translateY(-50%);
+    background-image: url("https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-mobile/1f379b351b5c1d53e1a9.png");
+    background-size: 13px 13px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    width: 100%;
+    height: 15px;
+    padding-left: 30px;
+    margin-top: 10px;
+}
+
+.musicIcon a {
+    color: white;
+    text-decoration: none;
+}

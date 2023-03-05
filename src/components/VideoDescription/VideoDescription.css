@@ -1,0 +1,54 @@
+.description {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 13px;
+    background: linear-gradient(0deg, rgba(1,0,18,0.7749474789915967) 0%, rgba(255,255,255,0) 60%);
+}
+
+.text-description {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.author {
+    color: white;
+    text-decoration: none;
+}
+
+/* .album {
+    display: flex;
+    flex-direction: column;
+} */
+
+.album {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotate 8s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.album img {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}

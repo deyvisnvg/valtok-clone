@@ -3,18 +3,33 @@ import { Comment } from "../Icons/Comment"
 import { Share } from "../Icons/Share"
 import "./VideoPlayer.css"
 
-export default function VideoPlayerActions() {
+export default function VideoPlayerActions({ likes, shares, comments }) {
+    const handleLike = () => {
+        alert('like')
+    }
+
+    const handleComment = () => {
+        alert('comment')
+    }
+
+    const handleShare = () => {
+        alert('share')
+    }
+
     return (
         <aside className="actions">
-            <div className="action">
+            <button className="action" onClick={handleLike}>
                 <Heart />
-            </div>
-            <div className="action">
+                <span title="likes">{likes}</span>
+            </button>
+            <button className="action" onClick={handleComment}>
                 <Comment />
-            </div>
-            <div className="action">
+                <span title="comemnts">{comments}</span>
+            </button>
+            <button className="action" onClick={handleShare}>
                 <Share />
-            </div>
+                <span title="shares">{shares}</span>
+            </button>
         </aside>
     )
 }
